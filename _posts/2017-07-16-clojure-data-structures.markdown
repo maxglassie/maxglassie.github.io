@@ -36,6 +36,7 @@ My idea was to use map to apply a transformative function to the input string. I
 
 When I tried this out in the REPL, I'd get a sequence of nil. `toRNA` worked to return the letter. Map clearly worked over the string, applying the function to each character.
 
+**100 Functions Operate On One Data Structure**
 I knew from reading Clojure for the Brave and True that my issue was the manner that the data structures and functions were interacting.
 
 A little background. Clojure is a language that follows the famous quote from Alan Perlis at the beginning of SICP that "It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures."
@@ -46,6 +47,7 @@ I couldn't figure it out after a while and so I submitted my incomplete solution
 
 The user Jarak-Jakar had a solution that addressed my problems.
 
+**Translating Data Structures: The Solution** 
 Here's what I found out.
 
 The `seq` function turns a given data type to a sequence. When applied to a string, each character in the string is transformed to a `char`. This means that my original conditional function that was testing for equality based on `(= (l "D"))` and returning a string, was giving me nil values instead.
