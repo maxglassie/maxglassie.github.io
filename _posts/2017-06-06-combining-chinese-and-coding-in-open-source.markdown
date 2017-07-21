@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Merging Two Worlds: Combining Chinese and Code in An Open Source Contribution"
+title:  "Merging Two Worlds: Combining Chinese and Code in An Open Source Contribution to the Faker Gem"
 date:   2017-07-17 14:30 -0600
 categories: chinese, open source, code, faker, gem
 tags:
