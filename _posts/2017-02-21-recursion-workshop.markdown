@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "We Had a Blast Running a Recursion Workshop"
-date:   2017-07-17 14:30 -0600
+date:   2017-02-26 14:30 -0600
 categories: recursion, LISP, workshop
 tags:
     -recursion
