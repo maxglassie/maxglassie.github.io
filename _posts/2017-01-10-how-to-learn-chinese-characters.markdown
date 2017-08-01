@@ -2,7 +2,6 @@
 layout: post
 title:  "The Curious and Crazy Rabbit Hole of How to Learn Chinese Characters"
 date:   2017-02-17 14:30 -0600
-categories: Chinese
 tags:
     -Chinese Characters
 ---

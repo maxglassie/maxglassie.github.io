@@ -2,7 +2,6 @@
 layout: post
 title:  "Merging Two Worlds: Combining Chinese and Code in An Open Source Contribution to the Faker Gem"
 date:   2017-07-17 14:30 -0600
-categories: chinese, open source, code, faker, gem
 tags:
     -chinese
     -open source
@@ -14,10 +13,10 @@ tags:
 
 I lived in Beijing for two years and studied Mandarin Chinese. It was an amazing and humbling experience. After a time, I used the skills I'd picked up studying Mandarin to learn to program at the Turing School of Software and Design.
 
-As part of our final graduation requirements, we're asked to contribute to an open source project. In my research, I started exploring the Faker gem. 
+As part of our final graduation requirements, we're asked to contribute to an open source project. In my research, I started exploring the Faker gem.
 
 ### Faker Gem
-The Faker gem is a program that Ruby developers can add to their projects which allows them to generate "fake" data for testing and demonstration purposes. 
+The Faker gem is a program that Ruby developers can add to their projects which allows them to generate "fake" data for testing and demonstration purposes.
 
 But perhaps the best part is the wide variety of ipsems available. Developer culture loves its humorous fake examples and Faker provides. There are fake names taken from Harry Potter or Star Wars. Fake filler text full of Chuck Norris programming jokes (yea, you read that right). It adds a spark of fun to client meetings, that's for sure.
 
@@ -46,7 +45,7 @@ Then I moved on to actually improving the translation capacity.
 
 ### Adding Chinese Universities - Discovering a Bug
 
-I started experimenting with Faker when set to the Chinese locale. When I tried out generating fake Chinese university names, I'd get things like "East 李" or "The 宁夏 College." What was going on? 
+I started experimenting with Faker when set to the Chinese locale. When I tried out generating fake Chinese university names, I'd get things like "East 李" or "The 宁夏 College." What was going on?
 
 It turns out that the method in the faker gem  called translate sets English as the default .yml file if the corresponding data is not available in locale specific file.
 
@@ -61,10 +60,10 @@ I decided to fix this and added the following to the yml file:
         - "#{University.prefix}#{University.suffix}"
 ```
 
-This will return a fake Chinese university when Faker::University.name is called by combining a random prefix and suffix. The prefixes are cardinal directions like "North" and "Southeast" and the suffixes are industry specific university categories, like "Arts University" or "Science and Technology University." 
+This will return a fake Chinese university when Faker::University.name is called by combining a random prefix and suffix. The prefixes are cardinal directions like "North" and "Southeast" and the suffixes are industry specific university categories, like "Arts University" or "Science and Technology University."
 
-I did a fair bit of research to make sure that these were good combinations of words to use for a fake university name. There were some decisions to make. For example, Chinese universities are more likely to be named after their province or city than their region. But the Chinese .yml file included a character after the province name that would not work in a university name. For example it contained 北京市 (lit. "Beijing City") or 
-福建省 (lit. "Fujian Province"). If I used the existing data, I'd be creating names like 北京市大学 ("Beijing City University") and a real Chinese university name would never have 市 "City" in the title. It would sound very weird. So it was a no go. 
+I did a fair bit of research to make sure that these were good combinations of words to use for a fake university name. There were some decisions to make. For example, Chinese universities are more likely to be named after their province or city than their region. But the Chinese .yml file included a character after the province name that would not work in a university name. For example it contained 北京市 (lit. "Beijing City") or
+福建省 (lit. "Fujian Province"). If I used the existing data, I'd be creating names like 北京市大学 ("Beijing City University") and a real Chinese university name would never have 市 "City" in the title. It would sound very weird. So it was a no go.
 
 I decided a simple approach would be alright, and went with a similar pattern to the one used in the English .yml university file. A direction and a university category. It would read well to a Chinese speaker as a plausible but likely fake university. And that's the right balance.
 
@@ -72,5 +71,4 @@ I decided a simple approach would be alright, and went with a similar pattern to
 
 There was no documentation to write for adding this update to the Faker gem. However, I thought it might be helpful to add a short piece to the contributing markdown (as a link) that would explain how to add new translations to locales. I tried to mimic the existing contributing documentation in tone and style.
 
-And then I submitted a [pull request](https://github.com/stympy/faker/pull/938) to the repo! 
-
+And then I submitted a [pull request](https://github.com/stympy/faker/pull/938) to the repo!

@@ -2,7 +2,6 @@
 layout: post
 title:  "Clickbait -- With Integrity"
 date:   2017-05-11 14:30 -0600
-categories: Armstrong, blockchain, clickbait with integrity
 tags:
     -principles
     -blockchain

@@ -2,7 +2,6 @@
 layout: post
 title:  "We Had a Blast Running a Recursion Workshop"
 date:   2017-02-26 14:30 -0600
-categories: recursion, LISP, workshop
 tags:
     -recursion
     -LISP
@@ -36,7 +35,7 @@ This breaks down to:
 When we increase the complexity of a procedure, this becomes more helpful.
 ```racket
 ; define a procedure named "abs" that takes an argument "x"
-(define (abs x) 
+(define (abs x)
 ; procedure body
 ; if (<predicate>) evaluates to true
   (if (> x 0)
@@ -49,7 +48,7 @@ When we increase the complexity of a procedure, this becomes more helpful.
 ### Running Code on a Whiteboard
 Sometimes our computers become a crutch. Running simple procedures on a whiteboard really helps me understand how the function works and how the inputs flow through the procedure.
 
-Here's our first example of a recursive procedure. We'll write out the syntax and then run it. 
+Here's our first example of a recursive procedure. We'll write out the syntax and then run it.
 ```racket
 (define (factorial n)
   (if (= n 1)
@@ -76,23 +75,23 @@ def factorial(number)
   number * (factorial(number - 1))
 end
 ```
-We can see that this is a recursive procedure - it calls itself in the definition. It's worthwhile pausing here to point out something that all recursive procedures have in common: a stopping condition. In this case, the procedure body says "when n = 1, return 1" rather than running the procedure again with "n - 1" as the argument. If this stopping condition wasn't present, we would create an infinite loop. 
+We can see that this is a recursive procedure - it calls itself in the definition. It's worthwhile pausing here to point out something that all recursive procedures have in common: a stopping condition. In this case, the procedure body says "when n = 1, return 1" rather than running the procedure again with "n - 1" as the argument. If this stopping condition wasn't present, we would create an infinite loop.
 
 Now let's run the code. Say (= n 3)
 ```racket
 (factorial 3)
-; is three equal to one? no, so return 
-(if (= 3 1)) 
+; is three equal to one? no, so return
+(if (= 3 1))
 ; the alternative
 (* 3 (factorial (2)))
 
 ; it's worthwhile noting here that we don't evaluate the full expression until the stopping condition is met
 ; so go ahead and run (factorial (2))
-; is two equal to one? no, so return 
+; is two equal to one? no, so return
 (if (= 2 1))
 ; the alternative - which gives us this
 (* 3 (* 2 (factorial (1))))
-; is one equal to one? yes! so 
+; is one equal to one? yes! so
 (if (= 1 1))
 ; return the consequent
 (1)
@@ -104,12 +103,12 @@ Now let's run the code. Say (= n 3)
 ```
 
 ### Patterns to Use
-I once read somewhere that factorial should be defined as "the function used to teach recursion to computer science students." It's a simple procedure but it shows some key patterns that are at the heart of writing recursive procedures. I can see a few patterns. 
+I once read somewhere that factorial should be defined as "the function used to teach recursion to computer science students." It's a simple procedure but it shows some key patterns that are at the heart of writing recursive procedures. I can see a few patterns.
 
-* All recursive procedures involve case logic. This means the presence of an "if-else" statement or something similar. 
+* All recursive procedures involve case logic. This means the presence of an "if-else" statement or something similar.
 * The case must always include a stopping condition. Without a stopping condition, we will create an infinite loop.   
 
-There is another deeper, hidden pattern here. The way that we evaluated the expression above shows that frequently in recursive procedures, we see "delayed evaluation." From the above example, it's only after we hit the stopping condition that the multiplication takes place. 
+There is another deeper, hidden pattern here. The way that we evaluated the expression above shows that frequently in recursive procedures, we see "delayed evaluation." From the above example, it's only after we hit the stopping condition that the multiplication takes place.
 
 Here with a larger factorial to show this more concretely:
 ```racket
