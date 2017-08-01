@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Neville Longbottom Principle of Leadership Development"
+title:  "What Does Neville Longbottom Teach Us About Leadership?"
 date:   2017-07-21 14:30 -0600
 tags:
     -principles
