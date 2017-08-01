@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What Does Neville Longbottom Teach Us About Leadership?"
+title:  "The Neville Longbottom Principle of Leadership Development"
 date:   2017-07-21 14:30 -0600
 tags:
     -principles
@@ -8,6 +8,8 @@ tags:
     -leadership
     -Neville Longbottom
 ---
+
+# What can Neville Longbottom teach us about leadership?
 
 My final module at [Turing](https://www.turing.io/), I led a "posse", which is essentially a student club, called Armstrong. The previous leaders were focused on blockchain technologies. I'm very interested in blockchain technologies and volunteered to take over the group.
 
