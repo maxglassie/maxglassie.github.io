@@ -23,7 +23,7 @@ I said from the first meeting that my priority was to give away leadership. The 
 
 It goes like this:
 
-**"I don't know who among you will be a hero and end up cutting off snakes heads and shit. What I do know is that it is most likely not who I expect it to be.**
+**"I don't know who among you will be a hero and end up cutting off snakes heads and other badassery. What I do know is that it is most likely not who I expect it to be.**
 
 **So the question is how do we create a space where people have the opportunity and the encouragement to grow and contribute? My priority as a leader is to create that space where these people potentialities can become real."**
 
