@@ -13,7 +13,7 @@ My final module at [Turing](https://www.turing.io/), I led a "posse", which is e
 
 I believe in moving from capacity, meaning what I am capable of doing, rather than getting caught up in visions of grandeur. In this vein, I had to accept that I didn't know as much technically as the previous leadership. In fact, I didn't know much about blockchain at all.
 
-Admitting my ignorance, the first thing I said is that we're all in this together in our desire to learn as a research team. My goal as the leader was simply to set a tone and to create a space for my fellow students to encounter and learn together about blockchain technologies.
+Admitting my ignorance, the first thing I said is that we're all in this together in our desire to learn as a research team. My goal as the leader was simply to set a tone and to create a space for my fellow students to encounter the ideas and learn together.
 
 Basically, if you know more or find a cool resource, it is your responsibility as a member of the team to share that knowledge with the group.
 
@@ -25,6 +25,6 @@ It goes like this:
 
 **"I don't know who among you will be a hero and end up cutting off snakes heads and shit. What I do know is that it is most likely not who I expect it to be.**
 
-**So the question is how do we create a space where people have the opportunity and the encouragement to grow and contribute? My priority as a leader is to create that space where these people potentialities become real."**
+**So the question is how do we create a space where people have the opportunity and the encouragement to grow and contribute? My priority as a leader is to create that space where these people potentialities can become real."**
 
-The most concrete, measurable way of doing this is giving away the meeting time. By the end of the module, over our four Spike sessions, 4 people gave lightning talks, 2 people led technical tutorials, and we brought in a guest speaker to talk about how to merge multiple applications, a Rails backend, a React front-end, and a Solidity smart contract into one user experience.
+The most concrete, measurable way of doing this is giving away the meeting time. By the end of the module, over our four Spike sessions, 4 people gave lightning talks, 2 people led technical tutorials, and we brought in a guest speaker to talk about application design.
