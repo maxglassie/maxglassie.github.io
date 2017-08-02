@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /about/
+permalink: /projects/
 ---
 
 #### [Broken Free - Heroku Link](https://broken-free.herokuapp.com/)
