@@ -17,7 +17,7 @@ This is super interesting to me... the contrasting ways of looking at the system
 It's a simple Door class. It can be queried for a status, which changes. Ex: `door.locked?`
 ``` ruby
 class Door
-  attr_accessor :locked
+  attr_reader :locked
 
   def initialize
     @locked = true
@@ -42,4 +42,31 @@ In Scheme, we could think of a door as a tagged data object, essentially a list 
 ('door 'locked? true )
 ```
 
+We can bind that to a variable:
+```
+(define door (list 'door 'locked true))
+```
+
 And we could also write a predicate procedure that determines if the door object's locked status is set to true.
+
+``` racket
+(define (locked? door)
+    (if (eq? (caddr door) true)
+        true
+        false))
+```
+
+We then would simply need a function that will update the "door" object to a different state when we want to unlock the door. The `set!` function will do this.
+
+``` racket
+  (set! door (list 'door 'locked false)))
+```
+
+We can then write an `unlock` function:
+
+``` racket
+(define (unlock door)
+  (if (locked? door)
+      (set! door (list 'door 'locked false))
+      door))
+```
