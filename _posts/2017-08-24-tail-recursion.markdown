@@ -36,7 +36,7 @@ A [tail call](https://en.wikipedia.org/wiki/Tail_call)'s official definition is 
         (* n (factorial (- n 1)))))
 ```
 
-The tail call is just that function call at the end of the procedure `(* n (factorial (- n 1))`
+The tail call is just that function call at the end of the procedure `(factorial (- n 1)`
 
 
 ### A Linear Recursive Process: Not Tail Recursive
