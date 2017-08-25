@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tail Recursion Is Its Own Reward: Wait What?!"
+title:  "Tail Recursion Is Its Own Reward: Wait, What is Tail Recursion?"
 date:   2017-08-22 14:30 -0600
 tags:
     -tail recursion
@@ -9,9 +9,6 @@ tags:
     -linear iterative process
     -functional programming
 ---
-
-# Tail Recursion Is Its Own Reward: Wait, What is Tail Recursion?
-
 
 ![Tail Recursion Is It's Own Reward](/static/img/tail_recursion.png)
 
