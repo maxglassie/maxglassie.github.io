@@ -12,9 +12,11 @@ tags:
 
 ![Tail Recursion Is It's Own Reward](/static/img/tail_recursion.png)
 
-Is it weird that I read about functional programming to relax at night? Don't answer that. I've been fascinated with tail recursion for a while and a few weeks ago I gave a lightning talk about what it actually is.
+[xkcd - functional programming](/static/img/tail_vs_not_tail.png)
 
-From my research, there are three conditions necessary for tail recursion:
+Is it weird that I read about functional programming to relax at night? Don't answer that. I've been fascinated with tail recursion for a while and a few weeks ago I gave a lightning talk about what it is.
+
+It can be a confusing concept. From my research, there are three conditions necessary for tail recursion:
 * a tail call
 * a linear iterative process
 * an interpreter that can run a linear iterative process executed using recursion that does not use the call stack
