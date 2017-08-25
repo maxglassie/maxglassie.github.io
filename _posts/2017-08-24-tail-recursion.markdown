@@ -21,6 +21,8 @@ From my research, there are three conditions necessary for tail recursion:
 
 This leads to a process that evolves in constant space. Which is epic.
 
+
+
 ### A Tail Call
 
 A tail call's official definition is "a subroutine call that is performed as the final action of a procedure." https://en.wikipedia.org/wiki/Tail_call Naturally, we'll be looking at this in Scheme LISP.
@@ -34,7 +36,8 @@ A tail call's official definition is "a subroutine call that is performed as the
 
 The tail call is just that function call at the end of the procedure `(* n (factorial (- n 1))`
 
-### a linear recursive process = not tail recursive
+
+### A Linear Recursive Process: Not Tail Recursive
 
 The procedure we just defined, while it does have a tail call, is not tail recursive. Working from 1.2.1 of SICP, we can see that this procedure generates a linear recursive process, which looks like this:
 
@@ -42,7 +45,7 @@ The procedure we just defined, while it does have a tail call, is not tail recur
 
 The key point here is that the evaluation of the procedure is delayed until the stopping condition `(= n 1)` is met. It creates a chain of _deferred operations_ and the interpreter has to keep track of all these operations. This takes up an amount of memory and requires a number of steps that grows linearly with _n_.
 
-### Linear iterative process: It's tail recursive!
+### Linear Iterative Process: It's Tail Recursive!
 
 There is another way to write the factorial function, using an iterative approach:
 
@@ -66,7 +69,7 @@ Even more exciting, it executes in constant space! The process does not grow or 
 
 One way to think about it is that the process could be stopped at any point and then restarted. There are no deferred operations.
 
-### Now we need to look at the interpreter
+### Can your interpreter tail recurse?
 
 Only some languages have interpreters that enable tail recursion.
 
