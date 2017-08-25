@@ -27,7 +27,7 @@ This leads to a process that evolves in constant space. Which is epic.
 
 ### A Tail Call
 
-A tail call's official definition is "a subroutine call that is performed as the final action of a procedure." [wiki](https://en.wikipedia.org/wiki/Tail_call) Naturally, we'll be looking at this in Scheme LISP.
+A [tail call](https://en.wikipedia.org/wiki/Tail_call)'s official definition is "a subroutine call that is performed as the final action of a procedure."  Naturally, we'll be looking at this in Scheme LISP.
 
 ``` Clojure
  (define (factorial n)
