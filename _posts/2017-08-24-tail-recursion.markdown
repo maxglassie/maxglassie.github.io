@@ -12,7 +12,7 @@ tags:
 
 ![Tail Recursion Is It's Own Reward](/static/img/tail_recursion.png)
 
-[xkcd - functional programming](/static/img/tail_vs_not_tail.png)
+[xkcd - functional programming](https://xkcd.com/1270/)
 
 Is it weird that I read about functional programming to relax at night? Don't answer that. I've been fascinated with tail recursion for a while and a few weeks ago I gave a lightning talk about what it is.
 
