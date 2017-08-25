@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tail Recursion is Its Own Reward: Wait What?"
+title:  "Tail Recursion Is Its Own Reward: Wait What?!"
 date:   2017-08-22 14:30 -0600
 tags:
     -tail recursion
