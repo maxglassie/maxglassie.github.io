@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tail Recursion Is Its Own Reward: Wait, What is Tail Recursion?"
-date:   2017-08-22 14:30 -0600
+date:   2017-08-24 14:30 -0600
 tags:
     -tail recursion
     -recursion
