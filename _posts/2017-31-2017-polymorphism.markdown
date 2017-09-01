@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The True Value of Polymorphism: Building Abstraction Barriers!"
-date:   2017-08-22 14:30 -0600
+date:   2017-08-31 14:30 -0600
 tags:
     -polymorphism
     -Clojure
