@@ -32,10 +32,12 @@ It's like the interpreter says, "I'm calling length on a string! Oh, I have to f
 
 The important point is that the interface appears the same to the programmer. The internals of how `length` is run, which are likely different for a string and an array, are abstracted away.
 
+## Abstraction Barriers!
 Hal and Gerry talk about how this concept of dispatch on type can help us build abstraction barriers in our programs (SICP 2.4). What does that mean and why do we care?
 
 An abstraction barrier enables me to introduce modularity into my programs. Say, for example, if I was designing the Ruby language and I wanted to change the implementation of `length` for an array to make it more efficient, or for some other reason. I can do this without breaking anyone's programs, since both before and after the changes under the hood, the programmer just calls `array.length`.
 
+## Multimethods In Clojure: Dispatch on Type
 A senior developer who is helping me learn Clojure recently assigned me to figure out how to do this.
 
 In this simple example, we have an application that has users and we need a `create-user` function. Clojure is wonderful because it emphasizes modeling the domain using simple data structures rather than objects.
@@ -102,6 +104,7 @@ Let's take a look at it in the REPL:
 
 The real value here is that it enables us to create an abstraction barrier between the create-user function and how it processes new types.
 
+## Abstraction Barriers Are A Powerful Tool For Creating Modularity In Our Systems
 We can build a robust application that only has students and teachers and then if we want to add on a new piece of functionality for a "principal" type user, all we have to do is define a new method for a principal. Everything else will work as it always did.
 
 Or if we want to update the student data type and method, we can work only on that implementation without changing the teacher or principal implementations at all.
