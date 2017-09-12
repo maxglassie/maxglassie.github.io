@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "80/20 Blockchain: The Key Concepts"
+title:  "80/20 Blockchain: What Are The Key Concepts?"
 date:   2017-09-11 10:35 -0600
 tags:
     -blockchain
@@ -12,17 +12,16 @@ What is blockchain? Why are so many people talking about it?
 
 There's a lot of hype about this technology right now. It makes it difficult to cut through the noise and figure out what really matters.
 
-I'm not an expert, but I've been researching this technology in order to distill the key concepts. I am simplifying things quite a bit here.
-
-My general strategy is to provide a model for understanding blockchain and then layer on a new model that helps us get closer to the reality.  
-
+I'm not an expert, but I've been researching this technology in order to distill the key concepts for non-technical people. I recently gave a talk about this at the WeWork in SF and I've written it up as an article.
 
 ## The Wild West
+
 First, a few disclaimers. It's clear that much of the hype is because there's a "get rich quick" vibe in this space. I'm not going to address cryptocurrency or "initial coin offering" speculation except to say that it is exactly that -- speculation. Investing in a volatile space means both high risk and high reward. Speculate at your own risk. Beware of FOMO, that trickster driver of stock bubbles and lost fortunes.  
 
-Blockchain is the Wild West right now. The analogy is apt. It's difficult to say definitively where this technology is heading. It's difficult to say where it is now. In the spirit of Kevin Kelly, _it is possible_ to identify potentialities.
+Blockchain is the Wild West right now. The analogy is apt. It's difficult to say definitively where this technology is heading. It's difficult to say where it is now. But, in the spirit of Kevin Kelly, _it is possible_ to identify potentialities.
 
-[image]
+![wild west](/static/img/wild_west.jpg)
+
 
 ## Definition: A Blockchain is a Distributed Ledger
 
@@ -30,41 +29,45 @@ In that spirit, let's start with a definition: a blockchain is a distributed led
 
 ![Distributed Ledger](/static/img/blockchain_plain.jpg)
 
-Basically, it's a distributed Excel spreadsheet. Each node keeps a full copy of the spreadsheet.
+Basically, it's a networked Excel spreadsheet where each node in the network keeps a full copy of an identical spreadsheet.
 
 ![Distributed Ledger](/static/img/blockchain_excel_spreadsheet.png)
 
 There are three key distinguishing characteristics of blockchain.
 
-1. Consensus: Each node in the network maintains the same spreadsheet. All the nodes are in sync, responsible for storing the same data. In other words, it's intentionally repetitive.  
+1. **Consensus:** Each node in the network maintains an identical "spreadsheet." All the nodes are in sync, responsible for storing the same data. In other words, it's intentionally repetitive.  
 
-2. Distributed: The blockchain is distributed across many nodes, which are all running the blockchain protocols.
+2. **Distributed:** The blockchain is distributed across many nodes.
 
-3. Trustless: This means that the network requires little trust between actors. It's a confusing term, but the key idea is that "trustless" means it requires zero or little trust is required between users of the blockchain.
+3. **Trustless:** This means that the network requires little trust between actors. It's a confusing term, but the key idea is that "trustless" means zero or little trust is required between users of the blockchain.
 
 All things come in threes but there's one more to highlight:
 
 **Data stored on the blockchain is immutable**. This means it cannot be changed or over written. Once a transaction is recorded on the blockchain it cannot be changed and it is stored forever.
 
 ## Who Cares About A Ledger?
-I'm not an economics guy. I don't know much about accounting but it's in this realm where blockchain has important implications.
+I don't know much about accounting but it's in this realm where blockchain has important implications.
 
 It took me a little while to wrap my head around this piece. A ledger is a way of storing data about transactions.
 
-![ledger](/static/img/ledger.jpg)
+<img src="/static/img/ledger.jpg" height="400" width="400">
 
 Say I transfer $100 from my bank account to my friend's bank account. My bank says, "We will subtract $100 from your balance and tell the your friend's bank to add $100 to their balance. The books will record that money moved from this account to the other account." This is recorded as a transaction.
 
-The key point is here is that the ledger is the fundamental tool that we use to store and transfer value. In the previous example, ownership of $100 is transferred by updating the records about who owns that money. The distinction with blockchain is that it does not require a centralized authority, like a bank, to validate the transfer of value. It can maintain an accurate ledger without needing to trust an institution.
+The key point is here is that the ledger is the fundamental tool that we use to store and transfer value. In the previous example, ownership of $100 is transferred by updating the records about who owns that money. The distinction with blockchain is that it does not require a centralized authority, like a bank, to validate the transfer of value. It can maintain an accurate ledger without needing to "trust" an institution.
+
+We can think of "trust" as being distributed across the blockchain.
 
 
 ## Blockchain As Infrastructure: A Protocol That Transfers Value
 
 Kirk Dameron gave a [presentation](https://www.meetup.com/Ethereum-Denver/events/239018434/) at a Denver blockchain MeetUp where he said that a good way of understanding this technology is "blockchain as infrastructure."
 
-![ledger](/static/img/infrastructure.jpg)
+As a distributed ledger, blockchain is a protocol that can transfer and store value. We can think of blockchain like roads. Roads are not inherently interesting.
 
-As a distributed ledger, blockchain is a protocol that can transfer and store value. We can think of blockchain like roads. Roads are not inherently interesting. They're a means for moving things around. But without this infrastructure, many interesting things cannot happen as easily, like going to my friend's house or shipping a package from a business to their customer.  
+They're a means for moving things around. But without this infrastructure, many interesting things cannot happen as easily, like going to my friend's house or shipping a package from a business to their customer.  
+
+![ledger](/static/img/infrastructure.jpg)
 
 
 ## Another Boring Protocol: Hyper Text Transfer Protocol
@@ -78,11 +81,11 @@ Blockchain is a new layer of infrastructure that can work with and augment the e
 ## Okay Dude But What About Being A Bitcoin Bajillionaire?
 Right, so I haven't talked about cryptocurrency at all, except to say that investing in it is speculative. Blockchain as a technology enables and implements a cryptocurrency. A cryptocurrency in turn is worth value because there is a system in place that cryptographically ensures that the currency will be scarce.
 
-![cryptocurrency](/static/img/cryptocurrency.jpg)
+<img src="/static/img/cryptocurrency.jpg" height="300" width="500">
 
 As an economist will tell you, scarcity is the basis for value. The classic example is that if suddenly the market is flooded with billions more diamonds, they will no longer be nearly as valuable. The price will drop dramatically. The same is true of the U.S. dollar or gold or Bitcoin.  
 
-I won't go into the details here, but currently blockchain enforces scarcity in cryptocurrency through a system called "proof of work." The key idea is that it is not possible to simply create new unit of a cryptocurrency at will, like I might copy a PDF or a computer program, because to "generate" new units of currency requires significant computational resources that cannot be faked.
+I won't go into the details here, but currently blockchain enforces scarcity in cryptocurrency through a system called ["proof of work."](https://en.wikipedia.org/wiki/Proof-of-work_system) The key idea is that it is not possible to simply create new unit of a cryptocurrency at will, like I might copy a PDF or a computer program, because to "generate" new units of currency requires significant computational resources that cannot be faked.
 
 ## Smart Contracts: Programming The Blockchain
 
@@ -98,11 +101,11 @@ A good example of a smart contract is an old school soda machine. It represents 
 
 "If I put 5 cents into the machine and press the button, it will not dispense a soda."
 
-![soda machine](/static/img/soda_machine.jpg)
+<img src="/static/img/soda_machine.jpg" height="400" width="250">
 
 Programmers can write "smart contracts" that can execute similar and more complex contractual relationships between entities automatically. For example, automatically buying and selling energy on a power grid.
 
-Pillsbury law wrote an interesting piece on [smart contracts](https://www.pillsburylaw.com/en/news-and-insights/recognition-of-smart-contracts.html)
+Them lawyers over at Pillsbury wrote an interesting piece on [smart contracts](https://www.pillsburylaw.com/en/news-and-insights/recognition-of-smart-contracts.html) if you want to explore this more.
 
 ## The Key Take Away of Smart Contracts: We Can Build Apps!
 
@@ -110,16 +113,15 @@ Roads may not be especially interesting. But they enable the development of econ
 
 The exciting part about smart contracts is that like traditional programming languages enable us to build applications on top of the infrastructure of the internet, programming languages on the blockchain enable us to build applications on top of the blockchain infrastructure.
 
-
-#### if blockchain = infrastructure then apps = buildings
+#### **If** blockchain = infrastructure **then** apps = buildings.
 
 ![infrastructure](/static/img/infrastructure.jpg)
 
-Looking at the picture, we can see the flow of cars and traffic around buildings, which are hubs of activity. Like these roads enable the flow of goods, people, and materials into and out of cities, smart contracts enable the flow of value into and out of applications.
+Looking at the picture, we can see the flow of cars and traffic around buildings, which are hubs of activity. Like these roads enable the flow of goods, people, and materials into and out of cities, the blockchain enables the flow of value into and out of applications written with smart contracts.
 
 ## Vision and Philosophy: Power to the People
 
-![power to the people](/static/img/power_to_people.jpg)
+<img src="/static/img/power_to_people.jpg" height="500" width="400">
 
 If you start getting involved in the technology and exploring the community, it's good to know that there is a philosophy driving the space.
 
@@ -127,7 +129,9 @@ That philosophy is tends to be libertarian in nature and distrustful of centrali
 
 For example, the goal to create a new form of ["digital gold"](https://en.wikipedia.org/wiki/Nick_Szabo) which did not require, like fiat currency does, the backing of a centralized authority like the Federal Reserve Bank was a driving force behind the development of cryptocurrencies.
 
-There are broad uses for blockchain beyond these and there are many people who think blockchain technologies can have a great positive [social impact](https://www.blockchainforsocialimpact.com/).
+And there are many people who think blockchain technologies can have a great positive [social impact](https://www.blockchainforsocialimpact.com/).
+
+But there are broad uses for blockchain beyond or contrary to this philosophy. Ultimately, blockchain is a protocol for transferring value - it does not have an inherently moral dimension. It does have qualities which may point towards those things, but like the internet, which is used both to help promote human rights and to limit them, blockchain is a morally indifferent instrument.
 
 ##### Additional Resources
 
