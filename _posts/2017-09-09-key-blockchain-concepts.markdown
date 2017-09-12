@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "80/20 Blockchain: What Are The Key Concepts?"
-date:   2017-09-11 10:35 -0600
+date:   2017-09-12 10:35 -0600
 tags:
     -blockchain
     -blockchain as infrastructure
@@ -133,7 +133,7 @@ And there are many people who think blockchain technologies can have a great pos
 
 But there are broad uses for blockchain beyond or contrary to this philosophy. Ultimately, blockchain is a protocol for transferring value - it does not have an inherently moral dimension. It does have qualities which may point towards those things, but like the internet, which is used both to help promote human rights and to limit them, blockchain is a morally indifferent instrument.
 
-##### Additional Resources
+### Additional Resources
 
 [McKinsey - How Blockchain Could Change the World](http://www.mckinsey.com/industries/high-tech/our-insights/how-blockchains-could-change-the-world)
 
